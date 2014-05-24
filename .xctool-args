@@ -1,0 +1,6 @@
+[
+    "-workspace", "StrawServiceHttp.xcworkspace",
+    "-scheme", "StrawServiceHttp",
+    "-configuration", "Debug",
+    "-sdk", "iphonesimulator"
+]

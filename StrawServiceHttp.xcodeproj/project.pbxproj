@@ -13,6 +13,8 @@
 		1992FC621930AFF700902837 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC611930AFF700902837 /* UIKit.framework */; };
 		1992FC651930AFF700902837 /* libStrawServiceHttp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC4D1930AFF700902837 /* libStrawServiceHttp.a */; };
 		1992FC6B1930AFF700902837 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1992FC691930AFF700902837 /* InfoPlist.strings */; };
+		1992FC791930B5C000902837 /* STWServiceHttpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1992FC781930B5C000902837 /* STWServiceHttpTests.m */; };
+		1992FC7C1930B64C00902837 /* STWServiceHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1992FC7B1930B64C00902837 /* STWServiceHttp.m */; };
 		737570EB87B543E89C4C439D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5BBD2A168449FBAE364E1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,9 @@
 		1992FC611930AFF700902837 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1992FC681930AFF700902837 /* StrawServiceHttpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StrawServiceHttpTests-Info.plist"; sourceTree = "<group>"; };
 		1992FC6A1930AFF700902837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1992FC781930B5C000902837 /* STWServiceHttpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWServiceHttpTests.m; sourceTree = "<group>"; };
+		1992FC7A1930B64C00902837 /* STWServiceHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWServiceHttp.h; sourceTree = "<group>"; };
+		1992FC7B1930B64C00902837 /* STWServiceHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWServiceHttp.m; sourceTree = "<group>"; };
 		F4B5BBD2A168449FBAE364E1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAE075408784592BF695612 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				1992FC531930AFF700902837 /* Supporting Files */,
+				1992FC7A1930B64C00902837 /* STWServiceHttp.h */,
+				1992FC7B1930B64C00902837 /* STWServiceHttp.m */,
 			);
 			path = StrawServiceHttp;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 		1992FC661930AFF700902837 /* StrawServiceHttpTests */ = {
 			isa = PBXGroup;
 			children = (
+				1992FC781930B5C000902837 /* STWServiceHttpTests.m */,
 				1992FC671930AFF700902837 /* Supporting Files */,
 			);
 			path = StrawServiceHttpTests;
@@ -255,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1992FC7C1930B64C00902837 /* STWServiceHttp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1992FC791930B5C000902837 /* STWServiceHttpTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
