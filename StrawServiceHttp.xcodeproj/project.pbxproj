@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1992FC511930AFF700902837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC501930AFF700902837 /* Foundation.framework */; };
+		1992FC561930AFF700902837 /* StrawServiceHttp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1992FC551930AFF700902837 /* StrawServiceHttp.h */; };
+		1992FC581930AFF700902837 /* StrawServiceHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1992FC571930AFF700902837 /* StrawServiceHttp.m */; };
+		1992FC5F1930AFF700902837 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC5E1930AFF700902837 /* XCTest.framework */; };
+		1992FC601930AFF700902837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC501930AFF700902837 /* Foundation.framework */; };
+		1992FC621930AFF700902837 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC611930AFF700902837 /* UIKit.framework */; };
+		1992FC651930AFF700902837 /* libStrawServiceHttp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC4D1930AFF700902837 /* libStrawServiceHttp.a */; };
+		1992FC6B1930AFF700902837 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1992FC691930AFF700902837 /* InfoPlist.strings */; };
+		1992FC6D1930AFF700902837 /* StrawServiceHttpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1992FC6C1930AFF700902837 /* StrawServiceHttpTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1992FC631930AFF700902837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1992FC451930AFF700902837 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1992FC4C1930AFF700902837;
+			remoteInfo = StrawServiceHttp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1992FC4B1930AFF700902837 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1992FC561930AFF700902837 /* StrawServiceHttp.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1992FC4D1930AFF700902837 /* libStrawServiceHttp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStrawServiceHttp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1992FC501930AFF700902837 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1992FC541930AFF700902837 /* StrawServiceHttp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StrawServiceHttp-Prefix.pch"; sourceTree = "<group>"; };
+		1992FC551930AFF700902837 /* StrawServiceHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrawServiceHttp.h; sourceTree = "<group>"; };
+		1992FC571930AFF700902837 /* StrawServiceHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrawServiceHttp.m; sourceTree = "<group>"; };
+		1992FC5D1930AFF700902837 /* StrawServiceHttpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrawServiceHttpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1992FC5E1930AFF700902837 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1992FC611930AFF700902837 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1992FC681930AFF700902837 /* StrawServiceHttpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StrawServiceHttpTests-Info.plist"; sourceTree = "<group>"; };
+		1992FC6A1930AFF700902837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1992FC6C1930AFF700902837 /* StrawServiceHttpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrawServiceHttpTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1992FC4A1930AFF700902837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992FC511930AFF700902837 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992FC5A1930AFF700902837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992FC5F1930AFF700902837 /* XCTest.framework in Frameworks */,
+				1992FC651930AFF700902837 /* libStrawServiceHttp.a in Frameworks */,
+				1992FC621930AFF700902837 /* UIKit.framework in Frameworks */,
+				1992FC601930AFF700902837 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1992FC441930AFF700902837 = {
+			isa = PBXGroup;
+			children = (
+				1992FC521930AFF700902837 /* StrawServiceHttp */,
+				1992FC661930AFF700902837 /* StrawServiceHttpTests */,
+				1992FC4F1930AFF700902837 /* Frameworks */,
+				1992FC4E1930AFF700902837 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1992FC4E1930AFF700902837 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1992FC4D1930AFF700902837 /* libStrawServiceHttp.a */,
+				1992FC5D1930AFF700902837 /* StrawServiceHttpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1992FC4F1930AFF700902837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1992FC501930AFF700902837 /* Foundation.framework */,
+				1992FC5E1930AFF700902837 /* XCTest.framework */,
+				1992FC611930AFF700902837 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1992FC521930AFF700902837 /* StrawServiceHttp */ = {
+			isa = PBXGroup;
+			children = (
+				1992FC551930AFF700902837 /* StrawServiceHttp.h */,
+				1992FC571930AFF700902837 /* StrawServiceHttp.m */,
+				1992FC531930AFF700902837 /* Supporting Files */,
+			);
+			path = StrawServiceHttp;
+			sourceTree = "<group>";
+		};
+		1992FC531930AFF700902837 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1992FC541930AFF700902837 /* StrawServiceHttp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1992FC661930AFF700902837 /* StrawServiceHttpTests */ = {
+			isa = PBXGroup;
+			children = (
+				1992FC6C1930AFF700902837 /* StrawServiceHttpTests.m */,
+				1992FC671930AFF700902837 /* Supporting Files */,
+			);
+			path = StrawServiceHttpTests;
+			sourceTree = "<group>";
+		};
+		1992FC671930AFF700902837 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1992FC681930AFF700902837 /* StrawServiceHttpTests-Info.plist */,
+				1992FC691930AFF700902837 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1992FC4C1930AFF700902837 /* StrawServiceHttp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1992FC701930AFF700902837 /* Build configuration list for PBXNativeTarget "StrawServiceHttp" */;
+			buildPhases = (
+				1992FC491930AFF700902837 /* Sources */,
+				1992FC4A1930AFF700902837 /* Frameworks */,
+				1992FC4B1930AFF700902837 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StrawServiceHttp;
+			productName = StrawServiceHttp;
+			productReference = 1992FC4D1930AFF700902837 /* libStrawServiceHttp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1992FC5C1930AFF700902837 /* StrawServiceHttpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1992FC731930AFF700902837 /* Build configuration list for PBXNativeTarget "StrawServiceHttpTests" */;
+			buildPhases = (
+				1992FC591930AFF700902837 /* Sources */,
+				1992FC5A1930AFF700902837 /* Frameworks */,
+				1992FC5B1930AFF700902837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1992FC641930AFF700902837 /* PBXTargetDependency */,
+			);
+			name = StrawServiceHttpTests;
+			productName = StrawServiceHttpTests;
+			productReference = 1992FC5D1930AFF700902837 /* StrawServiceHttpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1992FC451930AFF700902837 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kt3k.com;
+			};
+			buildConfigurationList = 1992FC481930AFF700902837 /* Build configuration list for PBXProject "StrawServiceHttp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1992FC441930AFF700902837;
+			productRefGroup = 1992FC4E1930AFF700902837 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1992FC4C1930AFF700902837 /* StrawServiceHttp */,
+				1992FC5C1930AFF700902837 /* StrawServiceHttpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1992FC5B1930AFF700902837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992FC6B1930AFF700902837 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1992FC491930AFF700902837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992FC581930AFF700902837 /* StrawServiceHttp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1992FC591930AFF700902837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1992FC6D1930AFF700902837 /* StrawServiceHttpTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1992FC641930AFF700902837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1992FC4C1930AFF700902837 /* StrawServiceHttp */;
+			targetProxy = 1992FC631930AFF700902837 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1992FC691930AFF700902837 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1992FC6A1930AFF700902837 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1992FC6E1930AFF700902837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1992FC6F1930AFF700902837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1992FC711930AFF700902837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StrawServiceHttp.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrawServiceHttp/StrawServiceHttp-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1992FC721930AFF700902837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StrawServiceHttp.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrawServiceHttp/StrawServiceHttp-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1992FC741930AFF700902837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrawServiceHttp/StrawServiceHttp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StrawServiceHttpTests/StrawServiceHttpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1992FC751930AFF700902837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StrawServiceHttp/StrawServiceHttp-Prefix.pch";
+				INFOPLIST_FILE = "StrawServiceHttpTests/StrawServiceHttpTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1992FC481930AFF700902837 /* Build configuration list for PBXProject "StrawServiceHttp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1992FC6E1930AFF700902837 /* Debug */,
+				1992FC6F1930AFF700902837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1992FC701930AFF700902837 /* Build configuration list for PBXNativeTarget "StrawServiceHttp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1992FC711930AFF700902837 /* Debug */,
+				1992FC721930AFF700902837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1992FC731930AFF700902837 /* Build configuration list for PBXNativeTarget "StrawServiceHttpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1992FC741930AFF700902837 /* Debug */,
+				1992FC751930AFF700902837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1992FC451930AFF700902837 /* Project object */;
+}
