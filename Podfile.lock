@@ -1,0 +1,15 @@
+PODS:
+  - Straw (0.3.5)
+
+DEPENDENCIES:
+  - Straw (from `https://github.com/strawjs/straw-ios.git`, tag `v0.3.5`)
+
+EXTERNAL SOURCES:
+  Straw:
+    :git: https://github.com/strawjs/straw-ios.git
+    :tag: v0.3.5
+
+SPEC CHECKSUMS:
+  Straw: 25cabd0e8211bf6e30162bfcc5068b7f3e51afcb
+
+COCOAPODS: 0.32.1

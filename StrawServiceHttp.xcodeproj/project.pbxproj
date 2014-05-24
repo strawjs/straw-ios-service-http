@@ -13,6 +13,7 @@
 		1992FC621930AFF700902837 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC611930AFF700902837 /* UIKit.framework */; };
 		1992FC651930AFF700902837 /* libStrawServiceHttp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1992FC4D1930AFF700902837 /* libStrawServiceHttp.a */; };
 		1992FC6B1930AFF700902837 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1992FC691930AFF700902837 /* InfoPlist.strings */; };
+		737570EB87B543E89C4C439D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B5BBD2A168449FBAE364E1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		1992FC611930AFF700902837 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1992FC681930AFF700902837 /* StrawServiceHttpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StrawServiceHttpTests-Info.plist"; sourceTree = "<group>"; };
 		1992FC6A1930AFF700902837 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4B5BBD2A168449FBAE364E1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDAE075408784592BF695612 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1992FC511930AFF700902837 /* Foundation.framework in Frameworks */,
+				737570EB87B543E89C4C439D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +82,7 @@
 				1992FC661930AFF700902837 /* StrawServiceHttpTests */,
 				1992FC4F1930AFF700902837 /* Frameworks */,
 				1992FC4E1930AFF700902837 /* Products */,
+				FDAE075408784592BF695612 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +101,7 @@
 				1992FC501930AFF700902837 /* Foundation.framework */,
 				1992FC5E1930AFF700902837 /* XCTest.framework */,
 				1992FC611930AFF700902837 /* UIKit.framework */,
+				F4B5BBD2A168449FBAE364E1 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1992FC701930AFF700902837 /* Build configuration list for PBXNativeTarget "StrawServiceHttp" */;
 			buildPhases = (
+				BF03CA69DE6F4141951A131D /* Check Pods Manifest.lock */,
 				1992FC491930AFF700902837 /* Sources */,
 				1992FC4A1930AFF700902837 /* Frameworks */,
 				1992FC4B1930AFF700902837 /* CopyFiles */,
+				A753E66A7A2E4E7FBE6D6CE9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +216,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A753E66A7A2E4E7FBE6D6CE9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF03CA69DE6F4141951A131D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1992FC491930AFF700902837 /* Sources */ = {
@@ -316,6 +357,7 @@
 		};
 		1992FC711930AFF700902837 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAE075408784592BF695612 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/StrawServiceHttp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -328,6 +370,7 @@
 		};
 		1992FC721930AFF700902837 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAE075408784592BF695612 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/StrawServiceHttp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -393,6 +436,7 @@
 				1992FC721930AFF700902837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1992FC731930AFF700902837 /* Build configuration list for PBXNativeTarget "StrawServiceHttpTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +445,7 @@
 				1992FC751930AFF700902837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
