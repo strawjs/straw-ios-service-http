@@ -1,4 +1,5 @@
 #import <XCTest/XCTest.h>
+#import "STWServiceHttp.h"
 
 @interface STWServiceHttpTests : XCTestCase
 
@@ -7,9 +8,11 @@
 @implementation STWServiceHttpTests
 
 
-- (void)testExample
+- (void)testName
 {
-    XCTAssert(YES);
+    id<STWService> service = [[STWServiceHttp alloc] init];
+
+    XCTAssertEqual(@"http", [service name], @"The service name is `http`.");
 }
 
 @end
