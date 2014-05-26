@@ -299,6 +299,7 @@
 /* Begin XCBuildConfiguration section */
 		1992FC6E1930AFF700902837 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAE075408784592BF695612 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -336,6 +337,7 @@
 		};
 		1992FC6F1930AFF700902837 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAE075408784592BF695612 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -367,7 +369,6 @@
 		};
 		1992FC711930AFF700902837 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDAE075408784592BF695612 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/StrawServiceHttp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -380,7 +381,6 @@
 		};
 		1992FC721930AFF700902837 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDAE075408784592BF695612 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/StrawServiceHttp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
