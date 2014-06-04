@@ -4,6 +4,13 @@ before_install:
 - gem install cocoapods
 - brew update
 - brew upgrade xctool
+- npm install stubbatti -g
+
+before_script:
+- stubbatti &
 
 script:
 - xctool test
+
+after_script:
+- stubbatti --kill

@@ -36,9 +36,9 @@
 
     id<STWServiceCallContext> serviceCallContext = mockProtocol(@protocol(STWServiceCallContext));
 
-    [serviceHttp get:@{@"url": @"http://strawjs.github.io/stub-response"} withContext:serviceCallContext];
+    [serviceHttp get:@{@"url": @"http://0.0.0.0:57577/hello"} withContext:serviceCallContext];
 
-    [verifyCount(serviceCallContext, times(1)) succeedWithString:@"This is a stub response."];
+    [verifyCount(serviceCallContext, times(1)) succeedWithString:@"Hello, world!"];
 }
 
 @end
