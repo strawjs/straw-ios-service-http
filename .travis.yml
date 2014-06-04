@@ -6,11 +6,5 @@ before_install:
 - brew upgrade xctool
 - npm install stubbatti -g
 
-before_script:
-- stubbatti &
-
 script:
-- xctool test
-
-after_script:
-- stubbatti --kill
+- make test
