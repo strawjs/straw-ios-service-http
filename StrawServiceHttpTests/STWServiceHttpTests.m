@@ -41,4 +41,16 @@
     [verifyCount(serviceCallContext, times(1)) succeedWithString:@"Hello, world!"];
 }
 
+
+- (void)testGetWithTimeout
+{
+    STWServiceHttp *serviceHttp = [[STWServiceHttp alloc] init];
+
+    id<STWServiceCallContext> serviceCallContext = mockProtocol(@protocol(STWServiceCallContext));
+
+    [serviceHttp get:@{@"url": @"http://0.0.0.0:57577/slow1000", @"timeout": @1.5} withContext:serviceCallContext];
+
+    [verifyCount(serviceCallContext, times(1)) succeedWithString:@"1000"];
+}
+
 @end

@@ -1,12 +1,13 @@
-.PHONY: clean test stub-kill
+.PHONY: clean test kill-stub
 
 clean:
 	xctool clean
 
 test:
+	stubbatti --kill
 	(stubbatti &)
 	xctool test
 	stubbatti --kill
 
-stub-kill:
+kill-stub:
 	stubbatti --kill
