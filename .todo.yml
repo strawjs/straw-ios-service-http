@@ -1,0 +1,5 @@
+todo:
+- handle 404, 503 etc
+- handle timeout error
+- handle character set
+done: []
