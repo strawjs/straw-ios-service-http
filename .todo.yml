@@ -2,4 +2,8 @@ todo:
 - handle 404, 503 etc
 - handle timeout error
 - handle character set
+- how should we document @serviceMethod?
+  - write verbosely in API doc of @serviceMethod?
+  - need some standard about Straw API doc
+    - without it straw never be usable
 done: []
