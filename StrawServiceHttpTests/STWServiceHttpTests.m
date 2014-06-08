@@ -32,25 +32,37 @@
 
 - (void)testGet
 {
+    // create the service instance
     STWServiceHttp *serviceHttp = [[STWServiceHttp alloc] init];
 
+    // mock the context up
     id<STWServiceCallContext> serviceCallContext = mockProtocol(@protocol(STWServiceCallContext));
 
     [serviceHttp get:@{@"url": @"http://0.0.0.0:57577/hello"} withContext:serviceCallContext];
 
-    [verifyCount(serviceCallContext, times(1)) succeedWithString:@"Hello, world!"];
+    [verifyCount(serviceCallContext, times(1)) succeedWithObject:@{@"responseText":@"Hello, world!", @"statusCode":@200}];
 }
 
 
 - (void)testGetWithTimeout
 {
+    // create the service instance
     STWServiceHttp *serviceHttp = [[STWServiceHttp alloc] init];
 
+    // mock the context up
     id<STWServiceCallContext> serviceCallContext = mockProtocol(@protocol(STWServiceCallContext));
 
+    // request with 1.5 sec timeout
     [serviceHttp get:@{@"url": @"http://0.0.0.0:57577/slow1000", @"timeout": @1.5} withContext:serviceCallContext];
 
-    [verifyCount(serviceCallContext, times(1)) succeedWithString:@"1000"];
+    // it should succeed with a response because 1.5 secs timeout and 1.0 sec response
+    [verifyCount(serviceCallContext, times(1)) succeedWithObject:@{@"responseText":@"1000", @"statusCode":@200}];
+
+    // request with 0.5 sec timeout
+    [serviceHttp get:@{@"url": @"http://0.0.0.0:57577/slow1000", @"timeout": @0.5} withContext:serviceCallContext];
+
+    // it should fail because 0.5 secs timeout and 1.0 sec response
+    [verifyCount(serviceCallContext, times(1)) failWithCode:-1001 withMessage:@"error: timeout"];
 }
 
 @end

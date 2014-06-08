@@ -13,14 +13,7 @@
 }
 
 
-/**
- @serviceMethod
- Perform a http GET request to the url
 
- @param params The parameters for the method call. params[@"url"] is the url. params[@"timeout"] is the timeout in seconds. params[@"charset"] is the charset to use in decoding the response text.
- @param context The Service Call context of the Method.
-
- */
 - (void)get:(NSDictionary *)params withContext:(id<STWServiceCallContext>)context
 {
     NSString *urlString = params[@"url"];
@@ -31,13 +24,27 @@
                                                   cachePolicy:NSURLRequestUseProtocolCachePolicy
                                               timeoutInterval:[timeout doubleValue]];
 
-    NSURLResponse *response;
+    NSHTTPURLResponse *response;
     NSError *error;
 
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     NSString *responseText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 
-    [context succeedWithString:responseText];
+    NSInteger statusCode = [response statusCode];
+
+
+
+    if (error) {
+
+        if ([error code] == NSURLErrorTimedOut) {
+            [context failWithCode:STWServiceHttpErrorTimeOut withMessage:@"error: timeout"];
+        }
+
+        [context failWithCode:STWServiceHttpErrorUnknown withMessage:@"failed!"];
+
+    } else {
+        [context succeedWithObject:@{@"responseText":responseText, @"statusCode":@(statusCode)}];
+    }
 }
 
 
