@@ -32,8 +32,6 @@
 
     NSInteger statusCode = [response statusCode];
 
-
-
     if (error) {
 
         if ([error code] == NSURLErrorTimedOut) {
@@ -43,7 +41,9 @@
         [context failWithCode:STWServiceHttpErrorUnknown withMessage:@"failed!"];
 
     } else {
+
         [context succeedWithObject:@{@"responseText":responseText, @"statusCode":@(statusCode)}];
+
     }
 }
 
