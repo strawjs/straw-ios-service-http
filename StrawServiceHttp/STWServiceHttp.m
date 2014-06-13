@@ -1,5 +1,8 @@
 #import "STWServiceHttp.h"
 
+// the default encoding is UTF-8
+#define STWServiceHTTPDefaultStringEncoding NSUTF8StringEncoding
+
 @implementation STWServiceHttp
 
 - (NSString *)name
@@ -20,6 +23,8 @@
     NSNumber *timeout = params[@"timeout"];
     NSString *charset = params[@"charset"];
 
+    NSStringEncoding encoding = [self selectEncoding:charset];
+
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]
                                                   cachePolicy:NSURLRequestUseProtocolCachePolicy
                                               timeoutInterval:[timeout doubleValue]];
@@ -28,7 +33,7 @@
     NSError *error;
 
     NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    NSString *responseText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSString *responseText = [[NSString alloc] initWithData:data encoding:encoding];
 
     NSInteger statusCode = [response statusCode];
 
@@ -50,6 +55,36 @@
 
 - (void)post:(NSDictionary *)params withContext:(id<STWServiceCallContext>)context
 {
+}
+
+
+- (NSStringEncoding)selectEncoding:(NSString *)charset
+{
+    if (!charset) {
+        // if charset is nil, then returns the default
+        return STWServiceHTTPDefaultStringEncoding;
+    }
+
+    charset = [charset lowercaseString];
+
+    if ([charset isEqualToString:@"utf8"] || [charset isEqualToString:@"utf-8"]) {
+
+        return NSUTF8StringEncoding;
+
+    } else if ([charset isEqualToString:@"shitfjis"] || [charset isEqualToString:@"shift_jis"]) {
+
+        return NSShiftJISStringEncoding;
+
+    } else if ([charset isEqualToString:@"eucjp"] || [charset isEqualToString:@"euc-jp"]) {
+
+        return NSJapaneseEUCStringEncoding;
+
+    }
+    // please add here what you need...
+
+    // otherwise returns the default
+    return STWServiceHTTPDefaultStringEncoding;
+
 }
 
 @end

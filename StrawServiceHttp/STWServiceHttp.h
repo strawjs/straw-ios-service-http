@@ -13,13 +13,14 @@ typedef NS_ENUM(NSInteger, STWServiceHttpError) {
  @serviceMethod
  Perform a http GET request to the url.
 
- success object:
- - {NSString} responseText The response text.
- - {NSNumber} statusCode The status code of the response.
+ Success Object:
+ - {String} responseText The response text
+ - {Number} statusCode The status code of the response
 
- failure object:
- - {NSInteger} code The error code.
- - {NSString} message The error message.
+ Error Codes:
+ - -1: Unknown error occured
+ - -1001: Connection timed out
+ - -1004: Cannot connect to the host
 
  @param params The parameters for the method call. params[@"url"] is the url. params[@"timeout"] is the timeout in seconds. params[@"charset"] is the charset to use in decoding the response text.
  @param context The Service Call context of the Method.
