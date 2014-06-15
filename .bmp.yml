@@ -1,0 +1,4 @@
+version: 0.0.1
+files:
+  README.md: straw-ios-service-http v%.%.%
+  StrawServiceHttp.podspec: '"%.%.%"'
