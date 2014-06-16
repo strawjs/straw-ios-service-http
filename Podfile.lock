@@ -1,8 +1,10 @@
 PODS:
-  - OCHamcrest (3.0.1)
-  - OCMockito (1.2.0):
-    - OCHamcrest (~> 3.0)
+  - OCHamcrest (4.0.1)
+  - OCMockito (1.3.0):
+    - OCHamcrest (~> 4.0)
+    - TPWeakProxy (~> 1.0)
   - Straw (0.4.0)
+  - TPWeakProxy (1.0.0)
 
 DEPENDENCIES:
   - OCMockito
@@ -14,8 +16,9 @@ EXTERNAL SOURCES:
     :tag: v0.4.0
 
 SPEC CHECKSUMS:
-  OCHamcrest: 207233b7d7a44dadd66aca398947cc7e029c9be5
-  OCMockito: e4b9564b2b9165a143fd54a41dbfb55595699624
+  OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
+  OCMockito: eca2670b3ce4a457d316b046a36d6f2b980a4da7
   Straw: 632beed57d30b909ae103640714dc7a4b92a95f1
+  TPWeakProxy: a23251ba7fbe268c93f809cc072ef834f5063798
 
 COCOAPODS: 0.33.1
