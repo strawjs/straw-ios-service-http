@@ -2,4 +2,6 @@
 version: 0.0.2
 files:
   README.md: straw-ios-service-http v%.%.%
-  StrawServiceHttp.podspec: ! '"%.%.%"'
+  StrawServiceHttp.podspec:
+  - ! '"%.%.%"'
+  - ':tag => "%.%.%"'
