@@ -8,20 +8,27 @@ Pod::Spec.new do |s|
 
   s.summary      = "Straw Service of Http"
 
-  s.description  = "Straw Service of Http"
+  s.description  = "Straw Service implementation of Http client methods"
 
-  s.homepage     = "https://github.com/strawjs/straw-ios-serice-http"
+  s.homepage     = "https://github.com/strawjs/straw-ios-service-http"
 
-  s.license      = "MIT"
+  s.license      = {
+      :type => "MIT",
+      :file => "LICENSE"
+  }
   
   s.author       = { "Yoshiya Hinosawa" => "stibium121@gmail.com" }
 
-  s.source       = { :git => "https://github.com/strawjs/straw-ios-service-http.git", :tag => "0.0.1" }
+  s.platform     = :ios, "5.0"
+
+  s.source       = { :git => "https://github.com/strawjs/straw-ios-service-http.git", :tag => "0.0.2" }
 
   s.source_files = "StrawServiceHttp/**/*.{h,m}"
 
   s.public_header_files = "StrawServiceHttp/**/*.h"
 
   s.dependency "Straw", "~> 0.4.0"
+
+  s.requires_arc  = true
 
 end
