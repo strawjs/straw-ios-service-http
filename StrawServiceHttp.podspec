@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "StrawServiceHttp/**/*.h"
 
-  s.dependency "Straw", :git => "https://github.com/strawjs/straw-ios.git", :tag => "v0.4.0"
+  s.dependency "Straw", "~> 0.4.0"
 
 end
