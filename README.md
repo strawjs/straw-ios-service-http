@@ -1,10 +1,8 @@
-Straw, a JS/Native bridge :tropical_drink: :tropical_drink:
-
-----
-
-> HTTP service for Straw iOS
+Straw, a native/js bridge :oden:
 
 # straw-ios-service-http v0.0.3
+
+> HTTP service for Straw iOS
 
 # Methods
 
