@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = "StrawServiceHttp"
 
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
 
   s.summary      = "Straw Service of Http"
 
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/strawjs/straw-ios-service-http.git", :tag => "v0.1.0" }
+  s.source       = { :git => "https://github.com/strawjs/straw-ios-service-http.git", :tag => "v0.1.1" }
 
   s.source_files = "StrawServiceHttp/**/*.{h,m}"
 
