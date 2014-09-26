@@ -25,6 +25,11 @@
 
     NSStringEncoding encoding = [self selectEncoding:charset];
 
+    // check if timeout is a NSNull
+    if ([timeout isKindOfClass:[NSNull class]]) {
+        timeout = @0;
+    }
+
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:urlString]
                                                   cachePolicy:NSURLRequestUseProtocolCachePolicy
                                               timeoutInterval:[timeout doubleValue]];

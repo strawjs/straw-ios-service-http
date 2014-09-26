@@ -84,4 +84,20 @@
     [verifyCount(serviceCallContext, times(1)) failWithCode:-1 withMessage:@"failed!"];
 }
 
+- (void)testGetWithNullTimeout
+{
+    // create the service instance
+    STWServiceHttp *serviceHttp = [[STWServiceHttp alloc] init];
+
+    // mock the context up
+    id<STWServiceCallContext> serviceCallContext = mockProtocol(@protocol(STWServiceCallContext));
+
+    // request with NSNull timeout (it happens when JSON from browser is like {"url":"...","timeout":null})
+    [serviceHttp get:@{@"url": @"http://0.0.0.0:57577/slow1000", @"timeout": [NSNull null]} withContext:serviceCallContext];
+
+    // it should succeed with a response
+    [verifyCount(serviceCallContext, times(1)) succeedWithObject:@{@"responseText":@"1000", @"statusCode":@200}];
+
+}
+
 @end
