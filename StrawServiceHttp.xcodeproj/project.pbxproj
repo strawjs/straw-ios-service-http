@@ -405,6 +405,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(inhereted)";
 				INFOPLIST_FILE = "StrawServiceHttpTests/StrawServiceHttpTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
@@ -421,6 +422,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StrawServiceHttp/StrawServiceHttp-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inhereted)";
 				INFOPLIST_FILE = "StrawServiceHttpTests/StrawServiceHttpTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
