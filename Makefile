@@ -11,3 +11,6 @@ test:
 
 kill-stub:
 	stubbatti --kill
+
+release:
+	pod trunk push StrawServiceHttp.podspec
