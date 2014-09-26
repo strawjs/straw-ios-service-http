@@ -1,6 +1,6 @@
 Straw, a native/js bridge :oden:
 
-# straw-ios-service-http v0.1.1
+# straw-ios-service-http v0.1.2
 
 > HTTP service for Straw iOS
 
