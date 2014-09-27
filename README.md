@@ -2,6 +2,8 @@ Straw, a native/js bridge :oden:
 
 # straw-ios-service-http v0.1.2
 
+[![Build Status](https://travis-ci.org/strawjs/straw-ios-service-http.svg?branch=master)](https://travis-ci.org/strawjs/straw-ios-service-http)
+
 > HTTP service for Straw iOS
 
 # Methods
