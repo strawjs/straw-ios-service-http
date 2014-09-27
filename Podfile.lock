@@ -4,7 +4,7 @@ PODS:
     - OCHamcrest (~> 4.0)
     - TPWeakProxy (~> 1.0)
   - Straw (0.4.0)
-  - TPWeakProxy (1.0.0)
+  - TPWeakProxy (1.0.1)
 
 DEPENDENCIES:
   - OCMockito
@@ -14,6 +14,6 @@ SPEC CHECKSUMS:
   OCHamcrest: b464725bbb48d0f1cd9c6f4ec3cb35fe0c4f2b94
   OCMockito: eca2670b3ce4a457d316b046a36d6f2b980a4da7
   Straw: afb83cc29c5b39b51f534d32c9106d6d03810cb0
-  TPWeakProxy: a23251ba7fbe268c93f809cc072ef834f5063798
+  TPWeakProxy: da4177b6ae5eff685642c1cd9698f71ef7060ea5
 
 COCOAPODS: 0.33.1
